@@ -64,14 +64,21 @@ Console.WriteLine("******************* End Logic Results ****************");
     Assignment Operations and Operators
  */
 
+Console.Write("Enter Random Value for Assignment Operations: ");
+int randomValue = Convert.ToInt32(Console.ReadLine());
+
 Console.WriteLine("******************* Logic Results ****************");
 Console.WriteLine();
-Console.WriteLine($"Is Greater Than: {isGreaterThan}");
-Console.WriteLine($"Is Less Than: {isLessThan}");
-Console.WriteLine($"Is Equal To: {isEqualTo}");
-Console.WriteLine($"Is Greater Than Or Equal To: {isGreaterThanOrEqualTo}");
-Console.WriteLine($"Is Less Than Or Equal To: {isLessThanOrEqualTo}");
-Console.WriteLine($"Is Not Equal: {isNotEqual}");
+num1 += randomValue;
+Console.WriteLine($"Num 1 increased by {randomValue}: {num1}");
+num1 -= randomValue;
+Console.WriteLine($"Num 1 reduced by {randomValue}: {num1}");
+num1 /= randomValue;
+Console.WriteLine($"Num 1 divided by {randomValue}: {num1}");
+num1 %= randomValue;
+Console.WriteLine($"Num 1 mod by {randomValue}: {num1}");
+num1 *= randomValue;
+Console.WriteLine($"Num 1 multiplied by {randomValue}: {num1}");
 Console.WriteLine();
 Console.WriteLine("******************* End Logic Results ****************");
 

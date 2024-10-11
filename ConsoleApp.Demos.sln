@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.OutputDemo", "ConsoleApp.OutputDemo\ConsoleApp.OutputDemo.csproj", "{04C72430-6646-47CE-8638-A77D75CEABF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.OutputDemo", "ConsoleApp.OutputDemo\ConsoleApp.OutputDemo.csproj", "{04C72430-6646-47CE-8638-A77D75CEABF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.VariablesDemo", "ConsoleApp.VariablesDemo\ConsoleApp.VariablesDemo.csproj", "{FD8886DB-26DE-4832-A60A-6434CFF76DB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.VariablesDemo", "ConsoleApp.VariablesDemo\ConsoleApp.VariablesDemo.csproj", "{FD8886DB-26DE-4832-A60A-6434CFF76DB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.UserInputDemo", "ConsoleApp.UserInputDemo\ConsoleApp.UserInputDemo.csproj", "{7876B89C-A2F2-4EA5-981E-3EEC61D64FB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.UserInputDemo", "ConsoleApp.UserInputDemo\ConsoleApp.UserInputDemo.csproj", "{7876B89C-A2F2-4EA5-981E-3EEC61D64FB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Operators", "ConsoleApp.Operators\ConsoleApp.Operators.csproj", "{EC5241F2-7E7C-40C4-B04F-E20FC5AE4E10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.Operators", "ConsoleApp.Operators\ConsoleApp.Operators.csproj", "{EC5241F2-7E7C-40C4-B04F-E20FC5AE4E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.ConditionsAndDecisions", "ConsoleApp.ConditionsAndDecisions\ConsoleApp.ConditionsAndDecisions.csproj", "{D44F786F-788D-4975-A360-7E3977EA0237}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EC5241F2-7E7C-40C4-B04F-E20FC5AE4E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5241F2-7E7C-40C4-B04F-E20FC5AE4E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5241F2-7E7C-40C4-B04F-E20FC5AE4E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44F786F-788D-4975-A360-7E3977EA0237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44F786F-788D-4975-A360-7E3977EA0237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44F786F-788D-4975-A360-7E3977EA0237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44F786F-788D-4975-A360-7E3977EA0237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
