@@ -11,13 +11,11 @@ while (choice != -1)
 {
 	try
 	{
-        Console.WriteLine("Please select an operation (-1 to exit program) ");
-        Console.WriteLine("1. Addition");
-        Console.WriteLine("2. Substraction");
-        Console.WriteLine("3. Multiplication");
-        Console.WriteLine("4. Division");
-        Console.WriteLine("5. Fibonacci sequence");
+        // Welcome Message
+        PrintMenu();
+
         choice = Convert.ToInt32(Console.ReadLine());
+
 
         if (choice == -1)
         {
@@ -35,28 +33,25 @@ while (choice != -1)
         {
             case 1:
                 /* Do addition */
-                answer = num1 + num2;
+                answer = AddNumber(num1, num2);
                 break;
             case 2:
                 /* Substraction */
-                answer = num1 - num2;
+                answer = SubtractNumber(num1, num2);
                 break;
             case 3:
                 /* Multiplication */
-                answer = num1 * num2;
+                answer = Product(num1, num2);
                 break;
             case 4:
                 /* Division */         
-                answer = num1 / num2;
+                answer = Quotient(num1, num2);
                 break;
             case 5:
-                for (int i = num1; i <= num2; i++)
-                {
-                    answer += i;
-                }
+                answer = Fibonnaci(num1, num2);
                 break;
             default:
-                throw new Exception("Invalid Menu Item Selected.")
+                throw new Exception("Invalid Menu Item Selected.");
         }
 
         // Print output
@@ -81,5 +76,45 @@ while (choice != -1)
         Console.WriteLine("Press any key to continue.");
         Console.ReadLine();
     }
+}
+
+// Method Definitions
+
+int AddNumber(int num1, int num2)
+{
+    return num1 + num2;
+}
+int SubtractNumber(int num1, int num2)
+{
+    return num1 + num2;
+}
+int Product(int num1, int num2)
+{
+    return num1 * num2;
+}
+int Quotient(int num1, int num2)
+{
+    return num1 / num2;
+}
+int Fibonnaci(int num1, int num2)
+{
+    var answer = 0;
+
+    for (int i = num1; i <= num2; i++)
+    {
+        answer += i;
+    }
+
+    return answer;
+}
+void PrintMenu()
+{
+    Console.Clear();
+    Console.WriteLine("Please select an operation (-1 to exit program) ");
+    Console.WriteLine("1. Addition");
+    Console.WriteLine("2. Substraction");
+    Console.WriteLine("3. Multiplication");
+    Console.WriteLine("4. Division");
+    Console.WriteLine("5. Fibonacci sequence");
 }
 
