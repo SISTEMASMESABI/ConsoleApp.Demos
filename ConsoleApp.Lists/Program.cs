@@ -1,30 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Console.WriteLine("Please indicate the number of grades to be entered: ");
+int numberOfGrades = Convert.ToInt32(Console.ReadLine());
 
-// Declare a List
-List<int> grades = new List<int>();
-int grade = 0;
+int[] grades = new int[numberOfGrades];
+string[] students = new string[numberOfGrades];
 
-// Add values to list
-do
+for (int i = 0; i < numberOfGrades; i++)
 {
-    Console.WriteLine("Enter Grade: ");
-    grade = Convert.ToInt32(Console.ReadLine());
-    if (grade != -1)
-    {
-        grades.Add(grade);
-    }
-} while (grade != -1);
+    Console.Write("Enter Student Name: ");
+    students[i] = Console.ReadLine();
 
-// Print values in list - for
-Console.WriteLine("Printing names via for loop");
-for (int i = 0; i < grades.Count; i++)
-{
-    Console.WriteLine(grades[i]);
+    Console.Write("Enter Grade: ");
+    grades[i] = Convert.ToInt32(Console.ReadLine());
 }
 
-// Print values in list - foreach
-foreach (int g in grades)
+Console.WriteLine("The Grades you have entered are: ");
+for (int i = 0; i < numberOfGrades; i++)
 {
-    Console.WriteLine(g);
+    Console.WriteLine($"{students[i]} : {grades[i]}");
 }
